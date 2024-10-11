@@ -25,7 +25,7 @@ setuptools.setup(
 
     keywords="inventree inventreeplugins label printer printing inventory",
 
-    url="https://github.com/inventree/inventree-niimbot-plugin",
+    url="https://github.com/piramja/inventree-niimbot-plugin",
 
     license="MIT",
 
