@@ -42,3 +42,26 @@ Vertical offset, from 0 to 200px.
 * **Horizontal Offset**
 Horizontal offset, from 0 to 200px.
 
+
+## Usage
+
+Once installed, the plugin should show up under **Settings -> Plugin Settings -> Plugins** and be activated.
+
+You can then adjust the printer settings under **Settings -> Plugin Settings -> Niimbot Label Printer**.
+
+As a starting point, you can use my settings for the B1 printer with 50x30mm standard labels and the "InvenTree Part Label" template:
+
+**Printer Model**: Niimbot B1,
+**Density**: 3,
+**Rotation**: 270°,
+**Scaling**: 60%,
+**Vertical Offset**: 50px,
+**Horizontal Offset**: 0px
+
+You can either connect the printer via USB or bluetooth. When using bluetooth, you need to pair the printer with the machine running InvenTree (e.g using bluez-tools on terminal). The printer is then detected automatically.
+
+## Known Issues
+
+The plugin system seemed to be broken in recent InvenTree docker images. I was not able to install the plugin without errors. Furthermore, i am not sure if it's even possible to access bluetooth or USB devices from within a docker image.
+
+I therefore was only able to use the plugin with bare metal installation of InvenTree. The bare metal installation also fixed many other issues the docker image had and worked like a charm, although it takes a little extra effort.
